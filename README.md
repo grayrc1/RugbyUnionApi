@@ -51,5 +51,5 @@ Returns a list of all players.
     "teamId": null
   }
 ]
-
+```
 ### Get Single Player
