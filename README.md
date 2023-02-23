@@ -12,6 +12,7 @@
 
 #### Api calls
 `Get /players` Returns a list of all players
+
 `Get /players/{id}` Returns player with specified ID
 
 ## Players
@@ -49,4 +50,6 @@ Returns a list of all players.
     "placeOfBirth": "Los Angeles",
     "teamId": null
   }
-]```
+]
+
+### Get Single Player
