@@ -15,6 +15,29 @@
 
 `Get /players/{id}` Returns player with specified ID
 
+`Get /players/playerteam/{id}` Returns the team of player with specified ID
+
+`Get /players/getage/{age} Returns all of the players with the specified age
+
+`Post /players` Creates new player
+
+`Put /players/{id}` Updates player with specified ID
+
+`Delete /players/{id}` Deletes player with specified ID
+
+`Get /teams` Returns a list of all teams
+
+`Get /teams/{id}` Returns team with speicified ID
+
+`Get /teams/getcoachplayers{coachname}` Returns all player who have the specified coach
+
+`Post /teams` Creates new team
+
+`Put /teams/{id}` Updates team with specified ID
+
+`Delete /teams/{id}` Deletes team with specified ID
+
+
 ## Players
 
 ### Get all players
