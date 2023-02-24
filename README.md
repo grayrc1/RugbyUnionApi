@@ -99,6 +99,7 @@ Returns a list of all players.
   "placeOfBirth": "New York City",
   "teamId": 1
 }
+```
 
 ### Create Player
 `POST /players`
