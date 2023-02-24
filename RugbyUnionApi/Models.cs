@@ -18,7 +18,7 @@
         public string Ground { get; set; } // Team's home ground
         public string Coach { get; set; } // Team's coach
         public int FoundedYear { get; set; } // Year the team was founded
-        public string Region { get; set; } // Region the team is based in
-        public ICollection<Player> Players { get; set; } // List of players signed with the team
+        public string Region? { get; set; } // Region the team is based in
+        public ICollection<Player>? Players { get; set; } // List of players signed with the team
     }
 }
