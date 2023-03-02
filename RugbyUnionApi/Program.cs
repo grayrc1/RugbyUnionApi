@@ -97,6 +97,7 @@ static async Task<IResult> DeletePlayer(int id, ModelsDb db)
     {
         db.Players.Remove(player);
         await db.SaveChangesAsync ();
+        return TypedResults.NoContent();
     }
     return TypedResults.NotFound();
 }
