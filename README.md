@@ -132,7 +132,7 @@ The request body should contain a JSON object representing the new player to cre
 
 #### Example Request:
 
-```json
+```
 POST /players/ HTTP/1.1
 Content-Type: application/json
 
@@ -148,7 +148,7 @@ Content-Type: application/json
 
 #### Example Response:
 
-```json
+```
 HTTP/1.1 201 Created
 Content-Type: application/json
 {
