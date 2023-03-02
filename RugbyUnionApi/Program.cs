@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore;
 using RugbyUnionApi;
 using System.Text.Json;
 
-const int NPlayers = 90; //number of random dummy players created on startup
-const int NTeams = 6; //number of random teams
-const int Teamsize = 15; //number of players per team
+const int NPlayers = 0; //number of random dummy players created on startup
+const int NTeams = 0; //number of random teams
+const int Teamsize = 0; //number of players per team
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ModelsDb>(opt => opt.UseInMemoryDatabase("ModelList"));
@@ -85,11 +85,7 @@ static async Task<IResult> UpdatePlayer(int id, Player inputPlayer, ModelsDb db)
     player.Height = inputPlayer.Height;
     player.Weight = inputPlayer.Weight;
     player.PlaceOfBirth = inputPlayer.PlaceOfBirth;
-
-    var team = await db.Teams.FindAsync(inputPlayer.TeamId)
-        ?? throw new ArgumentException($"Team with id {inputPlayer.TeamId} does not exist");
-    
-    player.TeamId = team.Id;
+    player.TeamId = inputPlayer.TeamId;
 
     await db.SaveChangesAsync();
     return TypedResults.NoContent();
@@ -240,3 +236,4 @@ static void CreateDummyData(ModelsDb db)
     db.SaveChanges();
 }
 
+public partial class Program { }
