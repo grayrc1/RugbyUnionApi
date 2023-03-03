@@ -5,7 +5,7 @@
 
 #### The project can be run by opening the RugbyUnionApi.sln file in Visual studio and running the code from there.
 
-#### The api can be explored using a api platform such as PostMan
+#### The api can be explored using an api platform such as PostMan
 
 
 # API Documentation
